@@ -4779,3 +4779,45 @@ html.no-csstransitions .s-hero__content {
         display: none !important; 
     }
 }
+
+/* ===================================================================
+ * # HOME PAGE DYNAMIC HEADER COLOR (White at top, Black when scrolled)
+ * =================================================================== */
+
+/* 1. At the very top (Hero Image): Force White */
+body:not([class*="page-"]) .s-header .s-header__nav a,
+body:not([class*="page-"]) .s-header .s-header__right-text,
+body:not([class*="page-"]) .s-header .s-header__right-text a,
+body:not([class*="page-"]) .s-header .s-header__right-text .header-sep {
+    color: #ffffff !important;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 2. When Scrolled down (Sticky Header over About Section): Force Black */
+body:not([class*="page-"]) .s-header.sticky .s-header__nav a,
+body:not([class*="page-"]) .s-header.sticky .s-header__right-text,
+body:not([class*="page-"]) .s-header.sticky .s-header__right-text a,
+body:not([class*="page-"]) .s-header.sticky .s-header__right-text .header-sep {
+    color: #000000 !important;
+}
+
+/* Keep the active/hovered link bold and black when scrolled */
+body:not([class*="page-"]) .s-header.sticky .s-header__nav a:hover,
+body:not([class*="page-"]) .s-header.sticky .s-header__nav li.current a {
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+
+/* 3. Mobile Hamburger Icon: White at top, Black when scrolled */
+body:not([class*="page-"]) .s-header .s-header__menu-toggle span,
+body:not([class*="page-"]) .s-header .s-header__menu-toggle span::before,
+body:not([class*="page-"]) .s-header .s-header__menu-toggle span::after {
+    background-color: #ffffff !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span,
+body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span::before,
+body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span::after {
+    background-color: #000000 !important;
+}
