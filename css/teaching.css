@@ -178,3 +178,32 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
     .s-footer .footer-contact { font-size: 1.5rem; }
     .s-footer .ss-copyright { font-size: 1.3rem; }
 }
+
+/* ===================================================================
+   ESSENTIAL RESOURCES: STACK VERTICALLY ON TABLET/MOBILE
+   =================================================================== */
+
+@media screen and (max-width: 1000px) {
+    
+    /* 1. Force the Flex container to stack vertically */
+    .page-teaching .foci-philosophy-area > div[style*="display: flex"] {
+        display: flex !important;
+        flex-direction: column !important; /* Forces up-and-down layout */
+        align-items: center !important;    /* Centers the stack horizontally */
+        gap: 5rem !important;              /* Adds nice vertical spacing between items */
+        width: 100% !important;
+    }
+
+    /* 2. Fix the individual resource items */
+    .page-teaching .foci-philosophy-area > div[style*="text-align: left"] {
+        text-align: center !important;     /* Centers the text (Title & Author) */
+        width: 100% !important;
+        max-width: 400px !important;       /* Keeps text from getting too wide/hard to read */
+        margin: 0 auto !important;         /* Centers the block itself */
+    }
+
+    /* 3. Optional: Adjust font sizes for the stacked view if needed */
+    .page-teaching .foci-philosophy-area p[style*="font-size: 2rem"] {
+        font-size: 2.2rem !important;      /* Slightly larger title for readability */
+    }
+}
