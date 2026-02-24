@@ -4641,6 +4641,7 @@ html.no-csstransitions .s-hero__content {
     top: 0 !important;
     transform: none !important;
     flex-shrink: 0 !important; /* Prevents the text from squishing */
+    display: flex !important;
 }
 
 /* 2. MOBILE MENU FIX (Screens under 900px) */
@@ -4812,7 +4813,7 @@ body:not([class*="page-"]) .s-header.sticky .s-header__nav li.current a {
 body:not([class*="page-"]) .s-header .s-header__menu-toggle span,
 body:not([class*="page-"]) .s-header .s-header__menu-toggle span::before,
 body:not([class*="page-"]) .s-header .s-header__menu-toggle span::after {
-    background-color: #ffffff !important;
+    background-color: #000000 !important;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -4820,4 +4821,82 @@ body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span,
 body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span::before,
 body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span::after {
     background-color: #000000 !important;
+}
+
+/* ===================================================================
+ * # HOME PAGE - MOBILE MENU FIX (Open State & Icon Visibility)
+ * =================================================================== */
+
+@media screen and (max-width: 900px) {
+    
+    /* 1. Make the hamburger icon WHITE when closed at the top of the page */
+    body:not([class*="page-"]):not(.menu-is-open) .s-header:not(.sticky) .s-header__menu-toggle span,
+    body:not([class*="page-"]):not(.menu-is-open) .s-header:not(.sticky) .s-header__menu-toggle span::before,
+    body:not([class*="page-"]):not(.menu-is-open) .s-header:not(.sticky) .s-header__menu-toggle span::after {
+        background-color: #fff6c3!important;
+    }
+
+    /* 2. Make the expanded dropdown background WHITE */
+    body.menu-is-open:not([class*="page-"]) .s-header__content {
+        background-color: #fff6c3 !important; 
+    }
+
+    /* 3. Force the text inside the dropdown to be BLACK */
+    body.menu-is-open:not([class*="page-"]) .s-header__content .s-header__nav a,
+    body.menu-is-open:not([class*="page-"]) .s-header__content .s-header__right-text,
+    body.menu-is-open:not([class*="page-"]) .s-header__content .s-header__right-text a,
+    body.menu-is-open:not([class*="page-"]) .s-header__content .s-header__right-text .header-sep {
+        color: #000000 !important;
+    }
+
+    /* 4. Ensure the 'X' (close icon) is BLACK when the menu is open */
+    body.menu-is-open:not([class*="page-"]) .s-header__menu-toggle span,
+    body.menu-is-open:not([class*="page-"]) .s-header__menu-toggle span::before,
+    body.menu-is-open:not([class*="page-"]) .s-header__menu-toggle span::after {
+        background-color: #000000 !important;
+    }
+}
+
+/* ===================================================================
+ * # HOME PAGE - CENTER PROFILE IMAGE ON MOBILE
+ * =================================================================== */
+
+/* We increase this to 1024px to catch iPads in Portrait mode */
+@media screen and (max-width: 1024px) {
+    
+    /* 1. Force the main row to stack vertically */
+    #about .row {
+        flex-direction: column !important;
+    }
+
+    /* 2. Make the text section full width */
+    .s-about__text {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding-right: 0 !important;
+    }
+
+    /* 3. Target the container holding the photo */
+    .s-about__photo-block {
+        display: flex !important;
+        justify-content: center !important; /* Horizontal Center */
+        align-items: center !important;
+        
+        width: 100% !important;        /* Force it to span the whole screen width */
+        flex: 0 0 100% !important;     /* Override column flex rules */
+        max-width: 100% !important;
+        
+        margin-top: 5rem !important;   /* Gap between text and image */
+        position: static !important;   /* Reset any desktop positioning */
+        top: auto !important;
+    }
+
+    /* 4. Target the photo box itself */
+    .s-about__photo {
+        margin: 0 auto !important;     /* Secondary centering */
+        max-width: 400px !important;   /* Good size for tablets */
+        width: 100% !important;
+        height: 450px !important;      /* Explicit height */
+        background-position: center top !important;
+    }
 }

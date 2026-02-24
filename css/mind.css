@@ -3,9 +3,9 @@
    =================================================================== */
 body.page-mind { background-color: #fdfaea !important; padding-top: 6rem !important; }
 .page-mind .s-header { background-color: #fff6c3 !important; position: fixed !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 8.8rem !important; z-index: 1000 !important; visibility: visible !important; opacity: 1 !important; }
-.page-mind .s-header__nav a { color: rgba(255, 255, 255, 0.75) !important; }
-.page-mind .s-header__nav a[href*="mindandmeaning.html"] { color: #ffffff !important; opacity: 1 !important; }
-.page-mind .s-header__right-text, .page-mind .s-header__right-text a { color: #ffffff !important; display: flex !important; }
+.page-mind .s-header__nav a { color: rgb(0, 0, 0) !important; }
+.page-mind .s-header__nav a[href*="mindandmeaning.html"] { color: #000000 !important; opacity: 1 !important; }
+.page-mind .s-header__right-text, .page-mind .s-header__right-text a { color: #000000 !important; display: flex !important; }
 
 /* Password Protection Overlay */
 #password-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #3a4f3a; z-index: 9999; display: flex; justify-content: center; align-items: center; color: white; font-family: "Cormorant Garamond", serif; }
@@ -21,7 +21,7 @@ body.page-mind { background-color: #fdfaea !important; padding-top: 6rem !import
 .mind-intro-section .column.lg-12 { width: 100% !important; max-width: none !important; padding: 0 !important; margin: 0 !important; display: flex !important; flex-direction: column !important; align-items: center !important; }
 
 .mind-title { width: 100%; text-align: center !important; font-size: 4.2rem; color: #000000; margin-bottom: 2rem !important; }
-.mind-intro { width: 90%; max-width: 800px; text-align: center !important; margin: 0 auto 5rem auto !important; line-height: 1.6; font-size: 1.7rem; }
+.mind-intro { width: 90%; max-width: 800px; text-align: center !important; margin: 0 auto 5rem auto !important; line-height: 1.6; font-size: 1.7rem; color: #000000; }
 
 /* Categories */
 .category-nav { width: 100%; display: flex !important; justify-content: center !important; flex-wrap: wrap; gap: 1.5rem; padding-bottom: 4rem; }
@@ -40,9 +40,9 @@ body.page-mind { background-color: #fdfaea !important; padding-top: 6rem !import
 .card-reflection { background-image: url('../images/cards_bg/6.png'); background-size: cover; border-color: #d7bde2; } .card-reflection p { color: #3a1b46; }
 
 /* Grid and Card Layout */
-.quote-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 4rem; margin-bottom: 4rem; }
+.quote-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 4rem; margin-bottom: 4rem; color: #000000;}
 .quote-card-simple { background-color: #ffffff; border: 1px solid #e3ede3; font-family: "Cormorant Garamond", serif; font-size: 2.2rem; line-height: 1.5; color: #333; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 280px; padding: 3rem; border-radius: 8px; transition: all 0.3s ease; background-size: cover; background-position: center; position: relative; overflow: hidden; z-index: 1; }
-.quote-card-simple p, .featured-quote-card p { margin: 0; width: 100%; font-size: 2.2rem; }
+.quote-card-simple p, .featured-quote-card p { margin: 0; width: 100%; font-size: 2.2rem; color: #000000; }
 .quote-icon-small, .quote-icon { margin-bottom: 2rem; margin-top: 0; }
 .quote-card-simple:hover { transform: scale(1.02); border-color: #8da18d; box-shadow: 0 10px 30px rgba(58, 79, 58, 0.05); }
 .quote-icon-small { color: #8da18d; font-size: 1.8rem; margin-bottom: 2rem; }

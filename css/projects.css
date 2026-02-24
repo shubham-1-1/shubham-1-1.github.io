@@ -9,6 +9,7 @@ body.page-projects { background-color: #fdfaea !important; padding-top: 0rem !im
 .page-projects .s-header__nav li a { color: rgb(0, 0, 0) !important; }
 .page-projects .s-header__nav li a:hover, .page-projects .s-header__nav li.current a { color: #000000 !important; }
 .page-projects .s-funding { padding-top: 12rem !important; padding-bottom: 12rem !important;}
+.page-projects .s-header__right-text { display: flex !important; opacity: 1 !important; visibility: visible !important; color: #000 !important; }
 .page-projects .s-header__right-text a, .page-projects .s-header__right-text .header-sep { color: #000000 !important; }
 
 /* Row Overrides */
