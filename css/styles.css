@@ -3650,7 +3650,7 @@ input::-moz-focus-inner {
 .s-hero__content-about {
     font-family: var(--font-2);
     font-weight: 800;
-    font-size: 2.4rem; 
+    font-size: 3rem !important; 
     line-height: 1.444;
     /*color: var(--color-white);*/ /*Font color of the content written below Hello.*/
     /* color: var(--color-1); */
@@ -4119,6 +4119,7 @@ html.no-csstransitions .s-hero__content {
     position: relative;
     top: 100px;
     left: 0px; 
+    align-items: center;
 }
 
 .s-about__photo {
@@ -4191,7 +4192,11 @@ html.no-csstransitions .s-hero__content {
     position: relative !important;
     
     /* Change this to 0 or a small number to move the photo UP to align with text */
-    top: 40px !important; 
+    top: 150px !important; 
+    display: flex;
+
+    justify-content: center !important; /* Horizontal Center */
+    align-items: center !important;
 }
 
 /* 3. Make the Photo larger to fill the new space */

@@ -29,15 +29,15 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 .page-teaching .foci-gif-container img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
 /* Text Content within Box */
-.page-teaching .foci-main-title { color: #000000; margin-bottom: 2rem !important; font-family: "Cormorant Garamond", serif; font-size: clamp(2.2rem, 3.5vw, 4.225rem) !important; font-weight: bolder !important; line-height: 1.1 !important; white-space: normal !important; width: 100% !important; display: block !important; text-align: left !important; }
+.page-teaching .foci-main-title { color: #000000; margin-bottom: 4rem !important; font-family: "Cormorant Garamond", serif; font-size: clamp(2.2rem, 3.5vw, 4.225rem) !important; font-weight: bolder !important; line-height: 1.1 !important; white-space: normal !important; width: 100% !important; display: block !important; text-align: left !important; }
 .page-teaching .foci-text-side > div[style*="margin-top"] { margin-top: 3rem; }
-.page-teaching .foci-desc { font-family: 'Cormorant Garamond', serif; font-style: italic; margin-top: 0rem; padding-top: 2rem; margin-bottom: 2rem !important; font-size: 1.7rem; line-height: 1.4 !important; color: #000000; }
+.page-teaching .foci-desc { font-family: 'Cormorant Garamond', serif; margin-top: 0rem; margin-bottom: 1rem !important; font-size: 2rem; line-height: 1.3 !important; color: #000000; }
 .page-teaching .foci-text-side div[style*="margin-bottom: 2rem"] { margin-bottom: 2rem; }
-.page-teaching .foci-trial { color: #000000; padding-bottom: 5px; margin-bottom: 15px; font-size: 2.8rem; text-align: left !important; font-family: "Cormorant Garamond", serif; font-weight: bolder; width: 100%; }
+.page-teaching .foci-trial { color: #000000; margin-bottom: 0px; margin-top: 15px; font-size: 2.8rem; text-align: left !important; font-family: "Cormorant Garamond", serif; font-weight: bolder; width: 100%; }
 
 /* Custom Arrow List */
 .page-teaching ul.foci-list { list-style: none !important; padding: 0 !important; margin: 0rem 0 0 0 !important; color: black; font-size: 1.7rem; }
-.page-teaching ul.foci-list li { list-style-type: none !important; position: relative !important; padding-left: 2rem !important; background: none !important; display: block !important; font-size: 1.7rem; color: #000000; font-family: "Noto Serif", serif; }
+.page-teaching ul.foci-list li { list-style-type: none !important; position: relative !important; padding-left: 2rem !important; background: none !important; display: block !important; font-size: 2rem; color: #000000; font-family: "Cormorant Garamond", serif; }
 .page-teaching ul.foci-list li::before { content: "\203A" !important; position: absolute !important; left: 0 !important; top: -0.25rem !important; color: #516e51 !important; font-size: 2.8rem !important; font-weight: bold !important; font-family: Arial, sans-serif !important; transition: all 0.3s ease; }
 
 /* Essential Resources (Extreme Wide) */
