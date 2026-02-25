@@ -15,12 +15,12 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 
 /* Section Header & Pills */
 .teaching-header-center { width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; margin-left: 0rem !important; padding-left: 0 !important; padding-right: 0 !important; }
-.page-teaching .pub-section-title { margin-bottom: 0rem !important; margin-top: 4rem !important; margin-left: 0rem !important; font-size: 4.2rem; font-family: "Cormorant Garamond", serif; color: #000000; text-align: center; }
+.page-teaching .pub-section-title { margin-bottom: 0rem !important; margin-top: 4rem !important; margin-left: 0rem !important; font-size: 4.6rem; font-family: "Cormorant Garamond", serif; color: #000000; text-align: center; font-weight: bolder;}
 .teaching-meta-row { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center !important; width: 100%; margin-top: 1.5rem; margin-bottom: 1rem; align-items: center !important; }
 .meta-pill { display: inline-flex; align-items: center; gap: 0.8rem; font-size: 1.6rem; font-weight: 500; color: #000000; }
 
 /* Main Unified Box Layout */
-.page-teaching .foci-row { width: 100% !important; max-width: none; margin: 0 !important; padding: 0 !important; background-color: #fdfaea !important; border-bottom: 2rem solid #e0ffd1 !important; }
+.page-teaching .foci-row { width: 100% !important; max-width: none; margin: 0 !important; padding: 0 !important; background-color: #fdfaea !important;}
 .page-teaching .foci-unified-box { display: flex; width: 100% !important; max-width: 100% !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; align-items: stretch; background-color: #fdfaea; flex-direction: column; }
 .page-teaching .foci-unified-box > div[style*="display: flex"] { display: flex; width: 100%; align-items: stretch; flex-direction: column; }
 .page-teaching .foci-text-side { flex: 1 !important; display: flex; flex-direction: column; justify-content: center; padding: 4rem 5rem 0rem 6vw !important; box-sizing: border-box; background-color: #fdfaea !important; text-align: left !important; }
@@ -29,7 +29,7 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 .page-teaching .foci-gif-container img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
 /* Text Content within Box */
-.page-teaching .foci-main-title { color: #000000; margin-bottom: 4rem !important; font-family: "Cormorant Garamond", serif; font-size: clamp(2.2rem, 3.5vw, 4.225rem) !important; font-weight: bolder !important; line-height: 1.1 !important; white-space: normal !important; width: 100% !important; display: block !important; text-align: left !important; }
+.page-teaching .foci-main-title { color: #000000; margin-bottom: 3rem !important; font-family: "Cormorant Garamond", serif; font-size: clamp(2.2rem, 3.5vw, 3.6rem) !important; font-weight: 600 !important; line-height: 1.1 !important; white-space: normal !important; width: 100% !important; display: block !important; text-align: left !important; margin-top: 0rem !important;}
 .page-teaching .foci-text-side > div[style*="margin-top"] { margin-top: 3rem; }
 .page-teaching .foci-desc { font-family: 'Cormorant Garamond', serif; margin-top: 0rem; margin-bottom: 1rem !important; font-size: 2rem; line-height: 1.3 !important; color: #000000; }
 .page-teaching .foci-text-side div[style*="margin-bottom: 2rem"] { margin-bottom: 2rem; }
@@ -38,12 +38,12 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 /* Custom Arrow List */
 .page-teaching ul.foci-list { list-style: none !important; padding: 0 !important; margin: 0rem 0 0 0 !important; color: black; font-size: 1.7rem; }
 .page-teaching ul.foci-list li { list-style-type: none !important; position: relative !important; padding-left: 2rem !important; background: none !important; display: block !important; font-size: 2rem; color: #000000; font-family: "Cormorant Garamond", serif; }
-.page-teaching ul.foci-list li::before { content: "\203A" !important; position: absolute !important; left: 0 !important; top: -0.25rem !important; color: #516e51 !important; font-size: 2.8rem !important; font-weight: bold !important; font-family: Arial, sans-serif !important; transition: all 0.3s ease; }
+.page-teaching ul.foci-list li::before { content: "\203A" !important; position: absolute !important; left: 0 !important; top: -0.25rem !important; color: #000000 !important; font-size: 2.8rem !important; font-weight: bold !important; font-family: Arial, sans-serif !important; transition: all 0.3s ease; }
 
 /* Essential Resources (Extreme Wide) */
 .page-teaching .foci-philosophy-area { padding-top: 0rem !important; padding-bottom: 4rem !important; padding-left: 2vw !important; padding-right: 2vw !important; max-width: 2100px !important; width: 98% !important; margin: 0 auto !important; text-align: center; background-color: #fdfaea; }
 .page-teaching .foci-philosophy-line { width: 95% !important; max-width: 1700px !important; height: 1px; background-color: rgba(0,0,0,0.1); margin: 0 auto 6rem auto !important; }
-.page-teaching .foci-philosophy-area h3 { font-family: 'Cormorant Garamond'; font-size: 3.8rem !important; color: #000000; margin-bottom: 3rem; font-weight: 700; padding-bottom: 3rem; white-space: nowrap !important; }
+.page-teaching .foci-philosophy-area h3 { font-family: 'Cormorant Garamond'; font-size: 3.8rem !important; color: #000000; margin-bottom: 3rem; font-weight: 600; white-space: nowrap !important; }
 .page-teaching .foci-philosophy-area > div[style*="display: flex"], .page-teaching .foci-philosophy-area > div { display: flex !important; justify-content: space-around !important; gap: 10vw !important; width: 100% !important; max-width: 100% !important; margin: 0 auto !important; flex-wrap: nowrap !important; }
 .page-teaching .foci-philosophy-area div[style*="max-width"] { flex: 0 0 auto !important; max-width: none !important; width: auto !important; text-align: left !important; }
 .page-teaching .foci-philosophy-area .foci-text-side h3 { white-space: nowrap !important; font-size: 1.9rem !important; margin-bottom: 0.8rem !important; }
@@ -70,6 +70,19 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 .page-teaching .teaching-grid-section .column:nth-child(odd) .design-item-card { margin-right: 18px !important; margin-left: auto !important; }
 .page-teaching .teaching-grid-section .column:nth-child(even) .design-item-card { margin-left: 32px !important; margin-right: auto !important; }
 .page-teaching .design-course-name { display: block; font-family: "Cormorant Garamond", serif; font-size: 2rem !important; font-weight: 700; color: #000000; line-height: 1.2; text-align: center !important; }
+
+/* ===================================================================
+   STANDALONE GREEN DIVIDER
+   =================================================================== */
+.green-separator-bar {
+    width: 100% !important;
+    height: 2rem !important;       /* Thickness of the line */
+    background-color: #e0ffd1 !important; /* The Light Green Color */
+    display: block !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 /* Footer overrides */
 .s-footer { padding-top: 0rem; padding-bottom: 0rem; color: rgb(255, 255, 255); background-color: #fff6c3; }
