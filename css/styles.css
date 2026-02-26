@@ -4905,3 +4905,28 @@ body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span::after {
         background-position: center top !important;
     }
 }
+
+/* ===================================================================
+ * # HERO TEXT SIZE FIX (Prevents Giant Text on Laptops)
+ * =================================================================== */
+
+/* 1. Fix for Laptops (1024px - 1400px) */
+@media screen and (max-width: 1400px) {
+    .s-hero__content h1 {
+        font-size: 7rem !important; /* Was set to 20rem (Huge) by mistake in original template */
+        line-height: 1.1 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .s-hero__content-about {
+        font-size: 2.2rem !important;
+        line-height: 1.5 !important;
+    }
+}
+
+/* 2. Fix for Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .s-hero__content h1 {
+        font-size: 5.5rem !important;
+    }
+}
