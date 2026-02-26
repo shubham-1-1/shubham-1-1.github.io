@@ -12,10 +12,11 @@ body.page-foci { background-color: #fdfaea !important; padding-top: 14rem !impor
 /* Foci Unified Blocks */
 .foci-row { width: 100% !important; background-color: #fdfaea !important; padding-bottom: 0 !important; border-bottom: 2rem solid #e0ffd1 !important; }
 .foci-unified-box { display: flex; width: 100% !important; max-width: 100% !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; align-items: stretch; background-color: #fdfaea; }
-.foci-row:nth-of-type(odd) .foci-unified-box { flex-direction: row-reverse; }
+.foci-row:nth-of-type(odd) .foci-unified-box { flex-direction: row-reverse;  }
 .foci-text-side { flex: 1; display: flex; flex-direction: column; padding: 10rem 4rem 8rem 6vw !important; box-sizing: border-box; }
+.foci-row:nth-of-type(odd) .foci-text-side { padding: 10rem 6vw 8rem 4rem !important;  }
 .foci-image-side { flex: 1; display: flex; align-items: center; padding: 0 !important; background-color: #fdfaea; }
-.foci-gif-container { width: 100% !important; height: 480px !important; display: flex; align-items: center; overflow: hidden; }
+.foci-gif-container { width: 100% !important; height: 360px !important; display: flex; align-items: center; overflow: visible; }
 .foci-gif-container img { width: 100% !important; height: 100% !important; object-fit: contain !important; }
 
 /* ===================================================================
@@ -65,7 +66,7 @@ body.page-foci { background-color: #fdfaea !important; padding-top: 14rem !impor
     .foci-text-side { padding: 8rem 3rem 6rem 5vw !important; }
     .foci-main-title { font-size: clamp(2rem, 3vw, 3.8rem) !important; }
     .foci-inline-tagline { font-size: 0.45em !important; }
-    .foci-desc { font-size: 1.6rem; }
+    .foci-desc { font-size: 1.4rem; }
     .foci-works ul.foci-list li, .foci-works ul.foci-list li span { font-size: 1.45rem; }
     .foci-gif-container { height: 400px !important; }
 }
@@ -85,7 +86,7 @@ body.page-foci { background-color: #fdfaea !important; padding-top: 14rem !impor
     .foci-text-side { padding: 4rem 2rem 3rem 2rem !important; }
     .foci-main-title { font-size: clamp(1.8rem, 6vw, 3rem) !important; white-space: normal !important; }
     .foci-inline-tagline { font-size: 0.4em !important; white-space: normal !important; }
-    .foci-desc { font-size: 1.5rem; }
+    .foci-desc { font-size: 1.3rem; }
     .foci-works ul.foci-list li, .foci-works ul.foci-list li span { font-size: 1.35rem; }
     .foci-gif-container { height: 250px !important; padding: 0 2rem !important; }
 }
@@ -93,7 +94,7 @@ body.page-foci { background-color: #fdfaea !important; padding-top: 14rem !impor
     .foci-text-side { padding: 3rem 1.5rem 2rem 1.5rem !important; }
     .foci-main-title { font-size: clamp(1.6rem, 7vw, 2.5rem) !important; }
     .foci-inline-tagline { font-size: 0.35em !important; }
-    .foci-desc { font-size: 1.4rem; }
+    .foci-desc { font-size: 1.2rem; }
     .foci-works ul.foci-list li, .foci-works ul.foci-list li span { font-size: 1.25rem; }
     .foci-gif-container { height: 200px !important; padding: 0 1.5rem !important; }
 }
