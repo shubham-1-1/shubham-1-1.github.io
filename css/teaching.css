@@ -29,9 +29,9 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 .page-teaching .foci-gif-container img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
 /* Text Content within Box */
-.page-teaching .foci-main-title { color: #000000; margin-bottom: 3rem !important; font-family: "Cormorant Garamond", serif; font-size: clamp(2.2rem, 3.5vw, 3.6rem) !important; font-weight: 600 !important; line-height: 1.1 !important; white-space: normal !important; width: 100% !important; display: block !important; text-align: left !important; margin-top: 0rem !important;}
+.page-teaching .foci-main-title { color: #000000; margin-bottom: 1rem !important; font-family: "Cormorant Garamond", serif; font-size: clamp(2.2rem, 3.5vw, 3.6rem) !important; font-weight: 600 !important; line-height: 1.1 !important; white-space: normal !important; width: 100% !important; display: block !important; text-align: left !important; margin-top: 0rem !important;}
 .page-teaching .foci-text-side > div[style*="margin-top"] { margin-top: 3rem; }
-.page-teaching .foci-desc { font-family: 'Cormorant Garamond', serif; margin-top: 0rem; margin-bottom: 1rem !important; font-size: 2rem; line-height: 1.3 !important; color: #000000; }
+.page-teaching .foci-desc { font-family: 'Cormorant Garamond', serif; margin-top: 0rem; margin-bottom: 1rem !important; font-size: 2rem; line-height: 1.3 !important; color: #000000; text-align: justify;}
 .page-teaching .foci-text-side div[style*="margin-bottom: 2rem"] { margin-bottom: 2rem; }
 .page-teaching .foci-trial { color: #000000; margin-bottom: 0px; margin-top: 15px; font-size: 2.8rem; text-align: left !important; font-family: "Cormorant Garamond", serif; font-weight: bolder; width: 100%; }
 
@@ -52,7 +52,7 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 
 /* Forthcoming Section */
 .page-teaching #forthcoming { background-color: #fdfaea; padding-bottom: 6rem; padding-top: 3rem !important; }
-.page-teaching #forthcoming .pub-section-title { margin-left: 0 !important; font-size: 4.2rem; margin-top: 3rem !important; margin-bottom: 2rem !important; }
+.page-teaching #forthcoming .pub-section-title { margin-left: 0 !important; font-size: 4.6rem; margin-top: 3rem !important; margin-bottom: 2rem !important; font-weight: bolder; }
 .page-teaching #forthcoming .pub-intro { margin-left: 0 !important; }
 .page-teaching #forthcoming .pub-intro p { font-family: 'Noto Serif', serif; font-style: italic; font-size: 2rem; color: #000000; }
 .page-teaching .forthcoming-item { padding: 0rem 0; position: relative; }
