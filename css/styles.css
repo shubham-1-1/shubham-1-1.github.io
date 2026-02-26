@@ -176,7 +176,8 @@
     --color-text       : var(--color-gray-9);
     --color-text-dark  : var(--color-black); /* color of the heading texts */
     --color-text-light : var(--color-trial);
-    --color-placeholder: var(--color-trial);
+    /* --color-placeholder: var(--color-trial); */
+    --color-placeholder: #ffffff;
 
     /* buttons
      */
