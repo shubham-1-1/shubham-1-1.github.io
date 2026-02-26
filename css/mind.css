@@ -1,7 +1,7 @@
 /* ===================================================================
    MIND & MEANING PAGE SPECIFIC (.page-mind)
    =================================================================== */
-body.page-mind { background-color: #fdfaea !important; padding-top: 6rem !important; }
+body.page-mind { background-color: #fdfaea !important; padding-top: 10rem !important; }
 .page-mind .s-header { background-color: #fff6c3 !important; position: fixed !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 8.8rem !important; z-index: 1000 !important; visibility: visible !important; opacity: 1 !important; }
 .page-mind .s-header__nav a { color: rgb(0, 0, 0) !important; }
 .page-mind .s-header__nav a[href*="mindandmeaning.html"] { color: #000000 !important; opacity: 1 !important; }
@@ -20,7 +20,7 @@ body.page-mind { background-color: #fdfaea !important; padding-top: 6rem !import
 .mind-intro-section .row { max-width: 100% !important; width: 100% !important; margin: 0 !important; padding: 0 !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; }
 .mind-intro-section .column.lg-12 { width: 100% !important; max-width: none !important; padding: 0 !important; margin: 0 !important; display: flex !important; flex-direction: column !important; align-items: center !important; }
 
-.mind-title { width: 100%; text-align: center !important; font-size: 4.2rem; color: #000000; margin-bottom: 2rem !important; }
+.mind-title { width: 100%; text-align: center !important; font-size: 4.6rem; color: #000000; margin-bottom: 2rem !important; font-weight: bolder; }
 .mind-intro { width: 90%; max-width: 800px; text-align: center !important; margin: 0 auto 5rem auto !important; line-height: 1.6; font-size: 1.7rem; color: #000000; }
 
 /* Categories */

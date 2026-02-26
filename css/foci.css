@@ -13,8 +13,8 @@ body.page-foci { background-color: #fdfaea !important; padding-top: 14rem !impor
 .foci-row { width: 100% !important; background-color: #fdfaea !important; padding-bottom: 0 !important; border-bottom: 2rem solid #e0ffd1 !important; }
 .foci-unified-box { display: flex; width: 100% !important; max-width: 100% !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; align-items: stretch; background-color: #fdfaea; }
 .foci-row:nth-of-type(odd) .foci-unified-box { flex-direction: row-reverse;  }
-.foci-text-side { flex: 1; display: flex; flex-direction: column; padding: 10rem 4rem 8rem 6vw !important; box-sizing: border-box; }
-.foci-row:nth-of-type(odd) .foci-text-side { padding: 10rem 6vw 8rem 4rem !important;  }
+.foci-text-side { flex: 1; display: flex; flex-direction: column; padding: 8rem 4rem 8rem 6vw !important; box-sizing: border-box; }
+.foci-row:nth-of-type(odd) .foci-text-side { padding: 8rem 6vw 8rem 4rem !important;  }
 .foci-image-side { flex: 1; display: flex; align-items: center; padding: 0 !important; background-color: #fdfaea; }
 .foci-gif-container { width: 100% !important; height: 360px !important; display: flex; align-items: center; overflow: visible; }
 .foci-gif-container img { width: 100% !important; height: 100% !important; object-fit: contain !important; }
