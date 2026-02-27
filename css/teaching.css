@@ -107,6 +107,31 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
     .page-teaching .forthcoming-details { text-align: center; }
 }
 @media screen and (max-width: 999px) {
+    .page-teaching .s-header__right-text {
+        display: flex !important;
+        flex-direction: column !important; /* Forces vertical stacking */
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 0 !important;
+        width: 100% !important;
+        color: #000000 !important;
+    }
+
+    /* 2. Links: Make them look exactly like the main menu items */
+    .page-teaching .s-header__right-text a {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 2rem 0 !important; /* Same vertical spacing */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; /* Same separator line */
+        font-size: 1.4rem !important; /* Match nav size */
+        letter-spacing: 0.25em !important;
+    }
+
+    /* 3. Separator: Hide the "|" symbol on mobile */
+    .page-teaching .s-header__right-text .header-sep {
+        display: none !important;
+    }
     .page-teaching .pub-section-title { font-size: 3.6rem; }
     .meta-pill { font-size: 1.5rem; }
     .page-teaching .foci-text-side { padding: 3rem 3rem 0rem 3rem !important; }
@@ -126,6 +151,31 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
     .page-teaching .teaching-grid-section .column:nth-child(odd) .design-item-card, .page-teaching .teaching-grid-section .column:nth-child(even) .design-item-card { margin-left: auto !important; margin-right: auto !important; }
 }
 @media screen and (max-width: 799px) {
+    .s-header__right-text {
+        display: flex !important;
+        flex-direction: column !important; /* Forces vertical stacking */
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 0 !important;
+        width: 90% !important;
+        color: #000000 !important;
+    }
+
+    /* 2. Links: Make them look exactly like the main menu items */
+    .s-header__right-text a {
+        display: block !important;
+        width: 90% !important;
+        text-align: center !important;
+        padding: 2rem 0 !important; /* Same vertical spacing */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; /* Same separator line */
+        font-size: 1.4rem !important; /* Match nav size */
+        letter-spacing: 0.25em !important;
+    }
+
+    /* 3. Separator: Hide the "|" symbol on mobile */
+    .s-header__right-text .header-sep {
+        display: none !important;
+    }
     .page-teaching .pub-section-title { font-size: 3.2rem; }
     .meta-pill { font-size: 1.4rem; gap: 0.6rem; }
     .page-teaching .foci-text-side { padding: 2.5rem 2.5rem 0rem 2.5rem !important; }
@@ -145,7 +195,31 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
     .page-teaching .design-course-name { font-size: 1.8rem !important; }
 }
 @media screen and (max-width: 599px) {
-    .s-header__right-text { display: none !important; }
+    .s-header__right-text {
+        display: flex !important;
+        flex-direction: column !important; /* Forces vertical stacking */
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 0 !important;
+        width: 90% !important;
+        color: #000000 !important;
+    }
+
+    /* 2. Links: Make them look exactly like the main menu items */
+    .s-header__right-text a {
+        display: block !important;
+        width: 90% !important;
+        text-align: center !important;
+        padding: 2rem 0 !important; /* Same vertical spacing */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; /* Same separator line */
+        font-size: 1.4rem !important; /* Match nav size */
+        letter-spacing: 0.25em !important;
+    }
+
+    /* 3. Separator: Hide the "|" symbol on mobile */
+    .s-header__right-text .header-sep {
+        display: none !important;
+    }
     .page-teaching .s-header__nav a { font-size: 1.4rem; }
     .page-teaching .pub-section-title { font-size: 2.8rem; }
     .meta-pill { font-size: 1.3rem; gap: 0.5rem; }

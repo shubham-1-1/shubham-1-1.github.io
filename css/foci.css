@@ -93,7 +93,31 @@ body.page-foci { background-color: #fdfaea !important; padding-top: 14rem !impor
     .foci-gif-container { height: 400px !important; }
 }
 @media screen and (max-width: 900px) {
-    .page-foci .s-header__right-text { display: none !important; }
+    .s-header__right-text {
+        display: flex !important;
+        flex-direction: column !important; /* Forces vertical stacking */
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 0 !important;
+        width: 90% !important;
+        color: #000000 !important;
+    }
+
+    /* 2. Links: Make them look exactly like the main menu items */
+    .s-header__right-text a {
+        display: block !important;
+        width: 90% !important;
+        text-align: center !important;
+        padding: 2rem 0 !important; /* Same vertical spacing */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; /* Same separator line */
+        font-size: 1.4rem !important; /* Match nav size */
+        letter-spacing: 0.25em !important;
+    }
+
+    /* 3. Separator: Hide the "|" symbol on mobile */
+    .s-header__right-text .header-sep {
+        display: none !important;
+    }
     .foci-unified-box, .foci-row:nth-of-type(even) .foci-unified-box { flex-direction: column !important; }
     .foci-text-side { padding: 6rem 4rem 4rem 4rem !important; text-align: center !important; }
     .foci-main-title, .foci-inline-tagline, .foci-desc, .foci-works h3.foci-trial { text-align: center !important; }

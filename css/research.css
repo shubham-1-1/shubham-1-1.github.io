@@ -62,7 +62,31 @@ h2.pub-section-title { font-size: 4.6rem; font-family: "Cormorant Garamond", ser
 .page-research .footer-contact a.college:hover, .page-research .ss-copyright a:hover { border-bottom: 1px dotted #000000; }
 
 @media screen and (max-width: 900px) {
-    .page-research .s-header__right-text { display: none !important; }
+    .page-research .s-header__right-text {
+        display: flex !important;
+        flex-direction: column !important; /* Forces vertical stacking */
+        align-items: center !important;
+        justify-content: center !important;
+        margin-top: 0 !important;
+        width: 100% !important;
+        color: #000000 !important;
+    }
+
+    /* 2. Links: Make them look exactly like the main menu items */
+    .page-research .s-header__right-text a {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 2rem 0 !important; /* Same vertical spacing */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; /* Same separator line */
+        font-size: 1.5rem !important; /* Match nav size */
+        letter-spacing: 0.25em !important;
+    }
+
+    /* 3. Separator: Hide the "|" symbol on mobile */
+    .page-research .s-header__right-text .header-sep {
+        display: none !important;
+    }
     .pub-row { flex-direction: column !important; gap: 1rem !important; padding-bottom: 4rem !important; border-bottom: 1px solid #d8e2d8; margin-bottom: 3rem; }
     .pub-divider { display: none; }
     .pub-year { text-align: left !important; font-size: 3.2rem !important; margin-top: 0 !important; color: #516e51 !important; order: -1; }
