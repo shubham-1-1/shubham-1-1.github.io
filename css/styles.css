@@ -4930,3 +4930,43 @@ body:not([class*="page-"]) .s-header.sticky .s-header__menu-toggle span::after {
         font-size: 5.5rem !important;
     }
 }
+
+/* ===================================================================
+ * # HOME PAGE MOBILE FIX: Stack "IIT DELHI" and "COE" Vertically
+ * =================================================================== */
+
+@media screen and (max-width: 900px) {
+    
+    /* 1. Force the container to stack items Top-to-Bottom */
+    .s-header__right-text {
+        display: flex !important;
+        flex-direction: column !important; /* This creates the "up and down" stack */
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        align-items: center !important;
+    }
+
+    /* 2. Style the links to look like full menu items */
+    .s-header__right-text a {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 2rem 0 !important; /* Vertical spacing */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; /* Divider line */
+        
+        /* Ensure Font Matches Main Menu */
+        font-family: "Noto Serif", serif !important;
+        font-size: 1.6rem !important;
+        letter-spacing: 0.25em !important;
+        text-transform: uppercase !important;
+        
+        /* Force Black Color when menu is open */
+        color: #000000 !important; 
+    }
+
+    /* 3. Hide the vertical pipe separator (|) */
+    .s-header__right-text .header-sep {
+        display: none !important;
+    }
+}
