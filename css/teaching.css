@@ -51,7 +51,7 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 .page-teaching .foci-philosophy-area p[style*="font-size: 1.7rem"] { font-size: 1.7rem; color: #555; text-align: center; }
 
 /* Forthcoming Section */
-.page-teaching #forthcoming { background-color: #fdfaea; padding-bottom: 6rem; padding-top: 3rem !important; }
+.page-teaching #forthcoming { background-color: #fdfaea; padding-bottom: 0rem; padding-top: 3rem !important; }
 .page-teaching #forthcoming .pub-section-title { margin-left: 0 !important; font-size: 4.6rem; margin-top: 3rem !important; margin-bottom: 2rem !important; font-weight: bolder; }
 .page-teaching #forthcoming .pub-intro { margin-left: 0 !important; }
 .page-teaching #forthcoming .pub-intro p { font-family: 'Noto Serif', serif; font-style: italic; font-size: 2rem; color: #000000; }
@@ -106,7 +106,7 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 }
 
 .book-item {
-    flex: 0 0 600px;
+    flex: 0 0 350px;
     text-align: center;
 }
 
