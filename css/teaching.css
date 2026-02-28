@@ -44,8 +44,8 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 .page-teaching .foci-philosophy-area { padding-top: 0rem !important; padding-bottom: 4rem !important; padding-left: 2vw !important; padding-right: 2vw !important; max-width: 2100px !important; width: 98% !important; margin: 0 auto !important; text-align: center; background-color: #fdfaea; }
 .page-teaching .foci-philosophy-line { width: 95% !important; max-width: 1700px !important; height: 1px; background-color: rgba(0,0,0,0.1); margin: 0 auto 6rem auto !important; }
 .page-teaching .foci-philosophy-area h3 { font-family: 'Cormorant Garamond'; font-size: 3.8rem !important; color: #000000; margin-bottom: 3rem; font-weight: 600; white-space: nowrap !important; }
-.page-teaching .foci-philosophy-area > div[style*="display: flex"], .page-teaching .foci-philosophy-area > div { display: flex !important; justify-content: space-around !important; gap: 10vw !important; width: 100% !important; max-width: 100% !important; margin: 0 auto !important; flex-wrap: nowrap !important; }
-.page-teaching .foci-philosophy-area div[style*="max-width"] { flex: 0 0 auto !important; max-width: none !important; width: auto !important; text-align: left !important; }
+.page-teaching .foci-philosophy-area > div[style*="display: flex"], .page-teaching .foci-philosophy-area > div { display: flex !important; justify-content: space-around !important; gap: 13vw !important; width: 100% !important; max-width: 100% !important; margin: 0 auto !important; flex-wrap: nowrap !important; }
+.page-teaching .foci-philosophy-area div[style*="max-width"] {flex: 0 0 auto !important; max-width: none !important; width: auto !important; text-align: left !important; }
 .page-teaching .foci-philosophy-area .foci-text-side h3 { white-space: nowrap !important; font-size: 1.9rem !important; margin-bottom: 0.8rem !important; }
 .page-teaching .foci-philosophy-area p[style*="font-size: 2rem"] { font-size: 2rem; line-height: 1.3; color: #000; font-weight: bold; margin-bottom: 5px; }
 .page-teaching .foci-philosophy-area p[style*="font-size: 1.7rem"] { font-size: 1.7rem; color: #555; text-align: center; }
@@ -96,12 +96,51 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
 .s-footer .ss-copyright a { color: #000000; border-bottom: none; text-decoration: none; }
 .s-footer .ss-copyright a:hover { border-bottom: 1px dotted #000000; }
 
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;                   /* consistent spacing */
+    flex-wrap: nowrap;             /* mobile safe */
+    max-width: 1000px;           /* prevents ultra-wide stretching */
+    margin: 0 auto;
+}
+
+.book-item {
+    flex: 0 0 600px;
+    text-align: center;
+}
+
+.book-title {
+    font-size: 2rem;
+    line-height: 1.3;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    flex-wrap: nowrap !important; 
+}
+
+.book-author {
+    font-size: 1.7rem;
+    color: #555;
+    text-align: center;
+    flex-wrap: nowrap !important; 
+}
+
+
 @media screen and (min-width: 1000px) {
     .page-teaching .foci-unified-box > div[style*="display: flex"] { flex-direction: row; }
     .page-teaching .foci-text-side { padding: 4rem 5rem 0rem 6vw !important; }
     .page-teaching .foci-image-side { min-height: 480px; padding: 4rem 6vw 0rem 5rem !important; }
     .page-teaching .foci-main-title { white-space: nowrap !important; text-align: left !important; }
-    .page-teaching .foci-philosophy-area > div[style*="display: flex"] { justify-content: space-around !important; gap: 10vw !important; flex-wrap: nowrap !important; }
+    .page-teaching .foci-philosophy-area > div {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;                /* Fixed consistent spacing */
+        max-width: 1200px;        /* Constrain layout */
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;          /* Allows responsiveness */
+    }
     .page-teaching .foci-philosophy-area > div[style*="text-align: left"] { text-align: left !important; flex: 0 0 auto !important; max-width: none !important; width: auto !important; }
     .page-teaching .forthcoming-course-title { text-align: center; }
     .page-teaching .forthcoming-details { text-align: center; }
@@ -143,7 +182,7 @@ body.page-teaching .row, body.page-teaching .container, body.page-teaching .colu
     .page-teaching .foci-gif-container { min-height: 350px; }
     .page-teaching .foci-philosophy-area { padding: 3rem 5% 3rem 5%; }
     .page-teaching .foci-philosophy-area h3 { font-size: 3.2rem !important; }
-    .page-teaching .foci-philosophy-area > div[style*="display: flex"] { gap: 2rem; flex-wrap: wrap; }
+    .page-teaching .foci-philosophy-area > div[style*="display: flex"] { gap: 10rem; flex-wrap: wrap; }
     .page-teaching .forthcoming-course-title { font-size: clamp(1.6rem, 3.5vw, 2.4rem) !important; }
     .page-teaching .forthcoming-details { font-size: 1.6rem; }
     .page-teaching .teaching-grid-main-title { font-size: 3.6rem; }

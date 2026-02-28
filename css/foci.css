@@ -64,7 +64,7 @@ body.page-foci { background-color: #fdfaea !important; padding-top: 14rem !impor
 .page-foci .foci-philosophy-line {
     width: 30% !important;
     height: 1px !important;
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: #87bc6b !important;
     
     /* 0 top/bottom, auto left/right = Perfect Center */
     margin: 3rem auto 0rem auto !important; 
