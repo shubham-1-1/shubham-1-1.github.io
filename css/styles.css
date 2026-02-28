@@ -163,7 +163,7 @@
     --color-gray-2 : #e2e3e5;
     --color-gray-1 : #f0f1f2;
     --color-white  : #ffffff;
-    --color-trial : #2d0a80;
+    --color-trial : #ffffff;
     /* --color-try: #607060; */
     /* --color-try: #3b4e3b; */
     /* --color-try: #4a5a56; */
@@ -176,8 +176,7 @@
     --color-text       : var(--color-gray-9);
     --color-text-dark  : var(--color-black); /* color of the heading texts */
     --color-text-light : var(--color-trial);
-    /* --color-placeholder: var(--color-trial); */
-    --color-placeholder: #ffffff;
+    --color-placeholder: var(--color-trial);
 
     /* buttons
      */
@@ -4173,7 +4172,7 @@ html.no-csstransitions .s-hero__content {
     width: 100% !important;
     display: flex !important;
     justify-content: space-between !important;
-    align-items: flex-start !important;
+    align-items: center !important;
     
     /* CONTROL SPACING HERE: 
        Lowering these numbers moves content closer to the screen edges.
@@ -4189,14 +4188,15 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo-block {
-    flex: 1 !important; /* Adjust ratio for the image side */
+    flex: 1 !important; 
     position: relative !important;
     
-    /* Change this to 0 or a small number to move the photo UP to align with text */
-    top: 175px !important; 
+    /* Remove 'top: 175px'. We reset it to 0 or auto */
+    top: auto !important; 
+    margin-top: 0 !important;
+    
     display: flex;
-
-    justify-content: center !important; /* Horizontal Center */
+    justify-content: center !important; 
     align-items: center !important;
 }
 
